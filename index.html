@@ -1,0 +1,1237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sri Rekha Beauty Parlour | Certified Beautician in Bhainsa, Nirmal District</title>
+<meta name="description" content="Sri Rekha Beauty Parlour – Bhainsa's most trusted certified beautician for bridal makeup, skincare, and beauty services. Book your transformation in Nirmal district, Telangana.">
+<meta name="keywords" content="beauty parlour Bhainsa, bridal makeup Bhainsa, beautician Nirmal district, bridal makeup Nirmal, beauty salon Bhainsa 504103, wedding makeup Telangana, best beauty parlour Bhainsa">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root {
+  --gold: #b8913a;
+  --gold-light: #d4af6a;
+  --gold-pale: #f5ecd7;
+  --rose: #c9707a;
+  --rose-soft: #f3e4e6;
+  --ivory: #faf8f4;
+  --dark: #1a1208;
+  --charcoal: #2e2416;
+  --muted: #7a6a55;
+  --cream: #f0ebe0;
+}
+
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'Jost', sans-serif;
+  background: var(--ivory);
+  color: var(--dark);
+  overflow-x: hidden;
+  cursor: none;
+}
+
+/* CUSTOM CURSOR */
+.cursor {
+  width: 10px; height: 10px;
+  background: var(--gold);
+  border-radius: 50%;
+  position: fixed; top: 0; left: 0;
+  pointer-events: none; z-index: 9999;
+  transform: translate(-50%, -50%);
+  transition: transform 0.1s;
+  mix-blend-mode: multiply;
+}
+.cursor-ring {
+  width: 36px; height: 36px;
+  border: 1px solid var(--gold);
+  border-radius: 50%;
+  position: fixed; top: 0; left: 0;
+  pointer-events: none; z-index: 9998;
+  transform: translate(-50%, -50%);
+  transition: all 0.15s ease;
+  opacity: 0.6;
+}
+
+/* DECORATIVE ELEMENTS */
+.ornament {
+  display: flex; align-items: center; gap: 16px;
+  justify-content: center; margin: 12px 0;
+}
+.ornament::before, .ornament::after {
+  content: '';
+  flex: 1; height: 1px;
+  background: linear-gradient(to right, transparent, var(--gold));
+}
+.ornament::after {
+  background: linear-gradient(to left, transparent, var(--gold));
+}
+.ornament-text {
+  color: var(--gold); font-size: 1.1rem; letter-spacing: 3px;
+}
+
+/* NAV */
+nav {
+  position: fixed; top: 0; width: 100%; z-index: 100;
+  padding: 20px 60px;
+  display: flex; align-items: center; justify-content: space-between;
+  transition: all 0.4s;
+}
+nav.scrolled {
+  background: rgba(250, 248, 244, 0.97);
+  backdrop-filter: blur(20px);
+  padding: 14px 60px;
+  border-bottom: 1px solid rgba(184,145,58,0.2);
+  box-shadow: 0 4px 40px rgba(26,18,8,0.06);
+}
+.nav-logo {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.4rem; font-weight: 600;
+  color: var(--dark); letter-spacing: 0.5px;
+  text-decoration: none;
+}
+.nav-logo span { color: var(--gold); }
+.nav-links { display: flex; gap: 36px; list-style: none; }
+.nav-links a {
+  text-decoration: none; color: var(--charcoal);
+  font-size: 0.8rem; font-weight: 500;
+  letter-spacing: 1.5px; text-transform: uppercase;
+  transition: color 0.2s;
+  position: relative;
+}
+.nav-links a::after {
+  content: ''; position: absolute; bottom: -3px; left: 0;
+  width: 0; height: 1px; background: var(--gold);
+  transition: width 0.3s;
+}
+.nav-links a:hover { color: var(--gold); }
+.nav-links a:hover::after { width: 100%; }
+.nav-cta {
+  background: var(--gold); color: white;
+  padding: 11px 28px; font-size: 0.75rem;
+  letter-spacing: 1.5px; text-transform: uppercase;
+  text-decoration: none; font-weight: 600;
+  transition: all 0.3s; border: 1px solid var(--gold);
+}
+.nav-cta:hover { background: transparent; color: var(--gold); }
+
+/* HERO */
+.hero {
+  min-height: 100vh;
+  position: relative;
+  display: flex; align-items: center; justify-content: center;
+  overflow: hidden;
+  background: var(--dark);
+}
+.hero-bg-pattern {
+  position: absolute; inset: 0;
+  background:
+    radial-gradient(ellipse 80% 60% at 20% 80%, rgba(184,145,58,0.12) 0%, transparent 60%),
+    radial-gradient(ellipse 60% 50% at 80% 20%, rgba(201,112,122,0.08) 0%, transparent 60%),
+    linear-gradient(160deg, #1a1208 0%, #2e1f10 40%, #1a1208 100%);
+}
+.hero-texture {
+  position: absolute; inset: 0; opacity: 0.04;
+  background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23d4af6a' fill-opacity='1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+.hero-content {
+  position: relative; z-index: 2;
+  text-align: center; padding: 0 24px; max-width: 900px;
+}
+.hero-eyebrow {
+  font-size: 0.72rem; letter-spacing: 4px; text-transform: uppercase;
+  color: var(--gold-light); font-weight: 400; font-family: 'Jost', sans-serif;
+  animation: fadeUp 1s ease both;
+}
+.hero h1 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(3.5rem, 8vw, 7rem);
+  font-weight: 300; line-height: 1.05;
+  color: white; letter-spacing: -1px;
+  margin: 16px 0 0;
+  animation: fadeUp 1s 0.15s ease both;
+}
+.hero h1 em {
+  font-style: italic; color: var(--gold-light);
+}
+.hero-divider {
+  width: 80px; height: 1px; background: var(--gold);
+  margin: 28px auto; opacity: 0.6;
+  animation: fadeUp 1s 0.3s ease both;
+}
+.hero-tagline {
+  font-size: 1rem; color: rgba(255,255,255,0.65);
+  font-weight: 300; line-height: 1.8; letter-spacing: 0.5px;
+  max-width: 560px; margin: 0 auto 36px;
+  animation: fadeUp 1s 0.4s ease both;
+}
+.hero-btns {
+  display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;
+  animation: fadeUp 1s 0.5s ease both;
+}
+.btn-gold {
+  background: var(--gold); color: white;
+  padding: 16px 40px; font-size: 0.78rem;
+  letter-spacing: 2px; text-transform: uppercase;
+  text-decoration: none; font-weight: 600;
+  transition: all 0.3s; display: inline-block;
+}
+.btn-gold:hover { background: var(--gold-light); transform: translateY(-2px); box-shadow: 0 12px 32px rgba(184,145,58,0.35); }
+.btn-outline-white {
+  border: 1px solid rgba(255,255,255,0.35); color: white;
+  padding: 16px 40px; font-size: 0.78rem;
+  letter-spacing: 2px; text-transform: uppercase;
+  text-decoration: none; font-weight: 400;
+  transition: all 0.3s; display: inline-block;
+}
+.btn-outline-white:hover { border-color: var(--gold); color: var(--gold); }
+.hero-badges {
+  display: flex; justify-content: center; gap: 32px;
+  margin-top: 56px; flex-wrap: wrap;
+  animation: fadeUp 1s 0.6s ease both;
+}
+.hero-badge {
+  display: flex; align-items: center; gap: 10px;
+  color: rgba(255,255,255,0.5); font-size: 0.75rem; letter-spacing: 1px;
+}
+.hero-badge span:first-child { color: var(--gold-light); font-size: 1.1rem; }
+
+/* SCROLL INDICATOR */
+.scroll-hint {
+  position: absolute; bottom: 32px; left: 50%; transform: translateX(-50%);
+  display: flex; flex-direction: column; align-items: center; gap: 8px;
+  color: rgba(255,255,255,0.3); font-size: 0.65rem; letter-spacing: 2px;
+  text-transform: uppercase;
+  animation: fadeUp 1s 1s ease both;
+}
+.scroll-line {
+  width: 1px; height: 48px;
+  background: linear-gradient(to bottom, var(--gold), transparent);
+  animation: scrollDown 2s ease infinite;
+}
+@keyframes scrollDown {
+  0% { transform: scaleY(0); transform-origin: top; }
+  50% { transform: scaleY(1); transform-origin: top; }
+  51% { transform: scaleY(1); transform-origin: bottom; }
+  100% { transform: scaleY(0); transform-origin: bottom; }
+}
+
+/* BRAND STATEMENT STRIP */
+.strip {
+  background: var(--gold);
+  padding: 18px 0; overflow: hidden;
+  position: relative;
+}
+.strip-track {
+  display: flex; gap: 0; white-space: nowrap;
+  animation: scroll 20s linear infinite;
+}
+@keyframes scroll {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+.strip-item {
+  display: inline-flex; align-items: center; gap: 24px;
+  color: white; font-size: 0.72rem; letter-spacing: 3px;
+  text-transform: uppercase; padding: 0 48px;
+}
+.strip-dot { width: 4px; height: 4px; background: rgba(255,255,255,0.5); border-radius: 50%; flex-shrink: 0; }
+
+/* SECTION BASE */
+section { padding: 100px 60px; }
+.section-eyebrow {
+  font-size: 0.7rem; letter-spacing: 4px; text-transform: uppercase;
+  color: var(--gold); font-weight: 600; margin-bottom: 12px;
+  display: block;
+}
+.section-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(2.4rem, 4vw, 3.8rem);
+  font-weight: 300; line-height: 1.15; letter-spacing: -0.5px;
+  color: var(--dark); max-width: 640px;
+}
+.section-title em { font-style: italic; color: var(--gold); }
+.section-sub {
+  font-size: 0.95rem; color: var(--muted);
+  line-height: 1.8; max-width: 520px;
+  margin-top: 16px; font-weight: 300;
+}
+
+/* ABOUT */
+.about-grid {
+  display: grid; grid-template-columns: 1fr 1fr;
+  gap: 80px; align-items: center; margin-top: 64px;
+}
+.about-img-wrap {
+  position: relative;
+}
+.about-img-frame {
+  aspect-ratio: 3/4;
+  background: linear-gradient(160deg, var(--cream), var(--gold-pale));
+  border: 1px solid rgba(184,145,58,0.2);
+  position: relative; overflow: hidden;
+}
+.about-img-frame::before {
+  content: '';
+  position: absolute; inset: 12px;
+  border: 1px solid rgba(184,145,58,0.3);
+  z-index: 1; pointer-events: none;
+}
+.about-img-placeholder {
+  width: 100%; height: 100%;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 5rem; opacity: 0.3;
+}
+.about-cert-badge {
+  position: absolute; bottom: -24px; right: -24px;
+  background: var(--dark); color: white;
+  padding: 24px; width: 120px; height: 120px;
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+  text-align: center; border: 1px solid var(--gold);
+}
+.cert-icon { font-size: 1.6rem; margin-bottom: 6px; }
+.cert-text { font-size: 0.6rem; letter-spacing: 1px; text-transform: uppercase; line-height: 1.4; }
+
+.about-content { }
+.trust-list { list-style: none; margin-top: 32px; display: flex; flex-direction: column; gap: 16px; }
+.trust-item {
+  display: flex; align-items: flex-start; gap: 16px;
+  padding: 16px 0; border-bottom: 1px solid rgba(184,145,58,0.12);
+}
+.trust-icon { color: var(--gold); font-size: 1.2rem; flex-shrink: 0; margin-top: 2px; }
+.trust-text h4 { font-size: 0.88rem; font-weight: 600; letter-spacing: 0.5px; margin-bottom: 3px; }
+.trust-text p { font-size: 0.8rem; color: var(--muted); line-height: 1.6; }
+
+.stat-row { display: flex; gap: 40px; margin-top: 36px; }
+.stat-item .big { font-family: 'Cormorant Garamond', serif; font-size: 3rem; font-weight: 300; color: var(--gold); line-height: 1; }
+.stat-item .lbl { font-size: 0.7rem; letter-spacing: 1.5px; text-transform: uppercase; color: var(--muted); margin-top: 4px; }
+
+/* BRIDAL SECTION */
+.bridal-bg {
+  background: var(--dark);
+  position: relative; overflow: hidden;
+}
+.bridal-bg::before {
+  content: '';
+  position: absolute; inset: 0;
+  background:
+    radial-gradient(ellipse 70% 50% at 85% 50%, rgba(184,145,58,0.1) 0%, transparent 60%),
+    radial-gradient(ellipse 40% 40% at 10% 80%, rgba(201,112,122,0.07) 0%, transparent 50%);
+}
+.bridal-grid {
+  display: grid; grid-template-columns: 1fr 1fr;
+  gap: 80px; align-items: center; position: relative; z-index: 1;
+}
+.bridal-content .section-title { color: white; max-width: 480px; }
+.bridal-content .section-sub { color: rgba(255,255,255,0.55); }
+.bridal-promise {
+  background: rgba(255,255,255,0.03); border: 1px solid rgba(184,145,58,0.2);
+  padding: 28px 32px; margin-top: 32px;
+}
+.bridal-promise p {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.2rem; font-style: italic;
+  color: var(--gold-light); line-height: 1.7;
+}
+.bridal-quote-attr {
+  font-size: 0.72rem; letter-spacing: 2px; text-transform: uppercase;
+  color: rgba(255,255,255,0.3); margin-top: 12px;
+}
+.bridal-features { display: flex; flex-direction: column; gap: 20px; margin-top: 36px; }
+.bridal-feature {
+  display: flex; align-items: center; gap: 16px;
+  color: rgba(255,255,255,0.7); font-size: 0.85rem;
+}
+.bridal-feature::before {
+  content: '✦'; color: var(--gold); font-size: 0.7rem; flex-shrink: 0;
+}
+
+.bridal-cards { display: flex; flex-direction: column; gap: 16px; }
+.bridal-card {
+  background: rgba(255,255,255,0.03); border: 1px solid rgba(184,145,58,0.15);
+  padding: 28px 32px; transition: all 0.3s; cursor: pointer;
+  position: relative; overflow: hidden;
+}
+.bridal-card::after {
+  content: ''; position: absolute; left: 0; top: 0;
+  width: 3px; height: 0; background: var(--gold);
+  transition: height 0.3s;
+}
+.bridal-card:hover { background: rgba(184,145,58,0.06); border-color: rgba(184,145,58,0.4); }
+.bridal-card:hover::after { height: 100%; }
+.bc-label { font-size: 0.65rem; letter-spacing: 3px; text-transform: uppercase; color: var(--gold); margin-bottom: 8px; }
+.bc-title { font-family: 'Cormorant Garamond', serif; font-size: 1.4rem; color: white; font-weight: 300; margin-bottom: 6px; }
+.bc-desc { font-size: 0.8rem; color: rgba(255,255,255,0.45); line-height: 1.6; }
+.bc-price { font-size: 0.85rem; color: var(--gold-light); margin-top: 12px; font-weight: 500; }
+
+/* SERVICES */
+.services-section { background: var(--cream); }
+.services-grid {
+  display: grid; grid-template-columns: repeat(3, 1fr);
+  gap: 24px; margin-top: 60px;
+}
+.service-card {
+  background: white; padding: 40px 32px;
+  border: 1px solid rgba(184,145,58,0.1);
+  transition: all 0.35s; position: relative; overflow: hidden;
+  cursor: pointer;
+}
+.service-card::before {
+  content: ''; position: absolute; top: 0; left: 0; right: 0;
+  height: 2px; background: linear-gradient(to right, var(--gold), var(--gold-light));
+  transform: scaleX(0); transform-origin: left;
+  transition: transform 0.35s;
+}
+.service-card:hover { transform: translateY(-6px); box-shadow: 0 24px 60px rgba(184,145,58,0.12); }
+.service-card:hover::before { transform: scaleX(1); }
+.service-emoji { font-size: 2.2rem; margin-bottom: 20px; display: block; }
+.service-name {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.5rem; font-weight: 400; margin-bottom: 12px;
+  color: var(--dark);
+}
+.service-desc { font-size: 0.82rem; color: var(--muted); line-height: 1.75; }
+.service-link {
+  display: inline-flex; align-items: center; gap: 8px;
+  margin-top: 20px; font-size: 0.72rem; letter-spacing: 2px;
+  text-transform: uppercase; color: var(--gold); text-decoration: none; font-weight: 600;
+  transition: gap 0.2s;
+}
+.service-card:hover .service-link { gap: 14px; }
+
+/* TESTIMONIALS */
+.testimonials-bg { background: var(--ivory); }
+.testi-grid {
+  display: grid; grid-template-columns: repeat(3, 1fr);
+  gap: 24px; margin-top: 60px;
+}
+.testi-card {
+  background: white; padding: 36px 32px;
+  border: 1px solid rgba(184,145,58,0.1);
+  position: relative;
+}
+.testi-card::before {
+  content: '"';
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 5rem; line-height: 1; color: var(--gold-pale);
+  position: absolute; top: 16px; right: 24px;
+  font-weight: 300;
+}
+.stars { color: var(--gold); font-size: 0.8rem; letter-spacing: 2px; margin-bottom: 16px; }
+.testi-text {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.1rem; font-style: italic; color: var(--charcoal);
+  line-height: 1.7; margin-bottom: 20px;
+}
+.testi-author { display: flex; align-items: center; gap: 12px; }
+.testi-avatar {
+  width: 44px; height: 44px; border-radius: 50%;
+  background: var(--gold-pale); display: flex; align-items: center; justify-content: center;
+  font-size: 1.2rem; border: 1px solid rgba(184,145,58,0.2);
+}
+.testi-name { font-size: 0.82rem; font-weight: 600; color: var(--dark); }
+.testi-event { font-size: 0.72rem; color: var(--gold); letter-spacing: 0.5px; }
+
+/* PROCESS */
+.process-section { background: white; }
+.process-steps {
+  display: grid; grid-template-columns: repeat(5, 1fr);
+  gap: 0; margin-top: 60px; position: relative;
+}
+.process-steps::before {
+  content: '';
+  position: absolute; top: 32px; left: 10%; right: 10%;
+  height: 1px;
+  background: linear-gradient(to right, transparent, var(--gold), transparent);
+}
+.process-step { text-align: center; padding: 0 16px; position: relative; z-index: 1; }
+.step-num {
+  width: 64px; height: 64px; border-radius: 50%;
+  background: white; border: 1px solid var(--gold);
+  display: flex; align-items: center; justify-content: center;
+  margin: 0 auto 20px;
+  font-family: 'Cormorant Garamond', serif; font-size: 1.6rem;
+  color: var(--gold); font-weight: 300;
+  transition: all 0.3s;
+}
+.process-step:hover .step-num { background: var(--gold); color: white; }
+.step-title { font-size: 0.82rem; font-weight: 600; letter-spacing: 0.5px; margin-bottom: 8px; }
+.step-desc { font-size: 0.74rem; color: var(--muted); line-height: 1.6; }
+
+/* GALLERY PLACEHOLDER */
+.gallery-section { background: var(--dark); }
+.gallery-section .section-title { color: white; }
+.gallery-section .section-sub { color: rgba(255,255,255,0.5); }
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 200px 200px;
+  gap: 12px; margin-top: 48px;
+}
+.gallery-item {
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(184,145,58,0.15);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 2rem; opacity: 0.4;
+  transition: all 0.3s; overflow: hidden; position: relative;
+}
+.gallery-item:hover { opacity: 0.8; border-color: rgba(184,145,58,0.5); }
+.gallery-item:first-child { grid-row: span 2; font-size: 3rem; }
+.gallery-item:last-child { grid-column: span 1; }
+.gallery-label {
+  position: absolute; bottom: 0; left: 0; right: 0;
+  background: linear-gradient(to top, rgba(26,18,8,0.9), transparent);
+  padding: 16px; font-size: 0.7rem; letter-spacing: 1.5px;
+  text-transform: uppercase; color: var(--gold-light); opacity: 0;
+  transition: opacity 0.3s;
+}
+.gallery-item:hover .gallery-label { opacity: 1; }
+
+/* FAQ */
+.faq-section { background: var(--ivory); }
+.faq-grid {
+  display: grid; grid-template-columns: 1fr 1fr;
+  gap: 0 80px; margin-top: 60px; align-items: start;
+}
+.faq-item {
+  border-bottom: 1px solid rgba(184,145,58,0.15);
+  padding: 24px 0; cursor: pointer;
+}
+.faq-q {
+  display: flex; justify-content: space-between; align-items: center; gap: 16px;
+}
+.faq-q-text { font-size: 0.9rem; font-weight: 500; color: var(--dark); line-height: 1.5; }
+.faq-icon {
+  color: var(--gold); font-size: 1.2rem; flex-shrink: 0;
+  transition: transform 0.3s; font-weight: 300;
+}
+.faq-a {
+  font-size: 0.82rem; color: var(--muted); line-height: 1.75;
+  margin-top: 12px; display: none;
+}
+.faq-item.open .faq-icon { transform: rotate(45deg); }
+.faq-item.open .faq-a { display: block; }
+
+/* CTA SECTION */
+.cta-section {
+  background: linear-gradient(160deg, var(--dark) 0%, #2a1a0a 100%);
+  text-align: center; padding: 120px 60px;
+  position: relative; overflow: hidden;
+}
+.cta-section::before {
+  content: '';
+  position: absolute; inset: 0;
+  background: radial-gradient(ellipse 60% 50% at 50% 100%, rgba(184,145,58,0.15), transparent);
+}
+.cta-section .section-title { color: white; max-width: none; text-align: center; margin: 0 auto; }
+.cta-section .section-sub { color: rgba(255,255,255,0.55); text-align: center; margin: 16px auto; max-width: 500px; }
+.cta-form {
+  background: rgba(255,255,255,0.04); border: 1px solid rgba(184,145,58,0.25);
+  max-width: 560px; margin: 40px auto 0;
+  padding: 36px 40px; position: relative; z-index: 1;
+}
+.form-title {
+  font-family: 'Cormorant Garamond', serif; font-size: 1.4rem;
+  color: white; margin-bottom: 24px; font-weight: 300;
+}
+.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 12px; }
+.form-group { display: flex; flex-direction: column; gap: 6px; }
+.form-group.full { grid-column: span 2; }
+.form-label {
+  font-size: 0.65rem; letter-spacing: 2px; text-transform: uppercase;
+  color: rgba(255,255,255,0.4);
+}
+.form-input {
+  background: rgba(255,255,255,0.06); border: 1px solid rgba(184,145,58,0.25);
+  color: white; padding: 12px 16px; font-size: 0.85rem; font-family: 'Jost', sans-serif;
+  outline: none; transition: border 0.2s; width: 100%;
+}
+.form-input::placeholder { color: rgba(255,255,255,0.25); }
+.form-input:focus { border-color: var(--gold); }
+select.form-input option { background: var(--dark); }
+.form-submit {
+  width: 100%; background: var(--gold); color: white;
+  border: none; padding: 16px; font-size: 0.78rem;
+  letter-spacing: 2px; text-transform: uppercase; font-weight: 600;
+  cursor: pointer; transition: all 0.3s; margin-top: 12px;
+  font-family: 'Jost', sans-serif;
+}
+.form-submit:hover { background: var(--gold-light); }
+.form-note { font-size: 0.72rem; color: rgba(255,255,255,0.3); margin-top: 12px; letter-spacing: 0.5px; }
+
+/* CONTACT BAR */
+.contact-bar {
+  background: var(--gold); display: flex;
+  justify-content: center; align-items: center;
+  gap: 48px; padding: 24px 60px; flex-wrap: wrap;
+}
+.contact-item { display: flex; align-items: center; gap: 12px; color: white; text-decoration: none; }
+.contact-icon { font-size: 1.2rem; }
+.contact-detail .ct-label { font-size: 0.65rem; letter-spacing: 2px; text-transform: uppercase; opacity: 0.75; }
+.contact-detail .ct-val { font-size: 0.9rem; font-weight: 600; margin-top: 2px; }
+
+/* FOOTER */
+footer {
+  background: var(--dark); padding: 60px 60px 32px;
+  display: grid; grid-template-columns: 1.5fr 1fr 1fr 1fr;
+  gap: 48px;
+}
+.footer-brand .f-logo {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.6rem; color: white; font-weight: 400; margin-bottom: 16px;
+  display: block;
+}
+.footer-brand .f-logo span { color: var(--gold); }
+.footer-brand p { font-size: 0.8rem; color: rgba(255,255,255,0.4); line-height: 1.7; }
+.footer-col h4 { font-size: 0.7rem; letter-spacing: 2.5px; text-transform: uppercase; color: var(--gold); margin-bottom: 16px; }
+.footer-col ul { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+.footer-col a { font-size: 0.8rem; color: rgba(255,255,255,0.4); text-decoration: none; transition: color 0.2s; }
+.footer-col a:hover { color: var(--gold-light); }
+.footer-bottom {
+  grid-column: span 4; border-top: 1px solid rgba(255,255,255,0.06);
+  padding-top: 24px; margin-top: 8px;
+  display: flex; justify-content: space-between; align-items: center;
+}
+.footer-bottom p { font-size: 0.72rem; color: rgba(255,255,255,0.25); }
+.footer-bottom .seo-keywords { font-size: 0.65rem; color: rgba(255,255,255,0.12); }
+
+/* WHATSAPP FLOAT */
+.wa-float {
+  position: fixed; bottom: 28px; right: 28px; z-index: 999;
+  background: #25D366; color: white;
+  width: 56px; height: 56px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1.5rem; text-decoration: none;
+  box-shadow: 0 8px 24px rgba(37,211,102,0.45);
+  animation: pulse-wa 2s ease infinite;
+  cursor: none;
+}
+@keyframes pulse-wa {
+  0%,100%{ box-shadow: 0 8px 24px rgba(37,211,102,0.45); }
+  50%{ box-shadow: 0 8px 36px rgba(37,211,102,0.65); }
+}
+.wa-tooltip {
+  position: absolute; right: 68px;
+  background: white; color: var(--dark); padding: 8px 14px;
+  border-radius: 4px; font-size: 0.75rem; white-space: nowrap; font-weight: 500;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.12); opacity: 0; pointer-events: none;
+  transition: opacity 0.2s; font-family: 'Jost', sans-serif;
+}
+.wa-float:hover .wa-tooltip { opacity: 1; }
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(32px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* RESPONSIVE */
+@media (max-width: 1024px) {
+  section { padding: 72px 32px; }
+  nav { padding: 18px 32px; }
+  nav.scrolled { padding: 14px 32px; }
+  .about-grid, .bridal-grid, .faq-grid { grid-template-columns: 1fr; gap: 48px; }
+  .services-grid, .testi-grid { grid-template-columns: 1fr 1fr; }
+  .process-steps { grid-template-columns: 1fr 1fr 1fr; gap: 24px; }
+  .process-steps::before { display: none; }
+  footer { grid-template-columns: 1fr 1fr; }
+  .footer-bottom { grid-column: span 2; }
+}
+@media (max-width: 640px) {
+  nav ul, .nav-cta { display: none; }
+  nav { padding: 16px 24px; }
+  section { padding: 60px 24px; }
+  .hero-btns { flex-direction: column; align-items: center; }
+  .services-grid, .testi-grid, .process-steps { grid-template-columns: 1fr; }
+  .gallery-grid { grid-template-columns: 1fr 1fr; grid-template-rows: auto; }
+  .gallery-item:first-child { grid-row: span 1; }
+  footer { grid-template-columns: 1fr; }
+  .footer-bottom { grid-column: span 1; flex-direction: column; gap: 8px; text-align: center; }
+  .form-row { grid-template-columns: 1fr; }
+  .form-group.full { grid-column: span 1; }
+  .contact-bar { flex-direction: column; gap: 20px; padding: 24px; }
+  .stat-row { gap: 24px; }
+}
+</style>
+</head>
+<body>
+
+<!-- CURSOR -->
+<div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<!-- WHATSAPP FLOAT -->
+<a href="https://wa.me/91XXXXXXXXXX?text=Hello%20Sri%20Rekha%20Beauty%20Parlour%2C%20I%20would%20like%20to%20book%20an%20appointment." class="wa-float" target="_blank" title="Chat on WhatsApp">
+  💬
+  <span class="wa-tooltip">Book via WhatsApp</span>
+</a>
+
+<!-- NAVIGATION -->
+<nav id="navbar">
+  <a href="#" class="nav-logo">Sri <span>Rekha</span></a>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#bridal">Bridal</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#testimonials">Reviews</a></li>
+    <li><a href="#faq">FAQ</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <a href="#contact" class="nav-cta">Book Appointment</a>
+</nav>
+
+<!-- ═══════════════════════════════════════════ HERO -->
+<section class="hero" id="home">
+  <div class="hero-bg-pattern"></div>
+  <div class="hero-texture"></div>
+  <div class="hero-content">
+    <p class="hero-eyebrow">✦ &nbsp; Bhainsa's Premier Beauty Destination &nbsp; ✦</p>
+    <h1>Where Beauty<br>Meets <em>Artistry</em></h1>
+    <div class="hero-divider"></div>
+    <p class="hero-tagline">Certified expert care for every woman's most radiant moment — from everyday elegance to your forever bridal glow.</p>
+    <div class="hero-btns">
+      <a href="#contact" class="btn-gold">✦ Book Your Appointment</a>
+      <a href="#bridal" class="btn-outline-white">Explore Bridal Services</a>
+    </div>
+    <div class="hero-badges">
+      <div class="hero-badge"><span>🏅</span> <span>Certified Beautician</span></div>
+      <div class="hero-badge"><span>⭐</span> <span>500+ Happy Clients</span></div>
+      <div class="hero-badge"><span>💍</span> <span>Bridal Specialist</span></div>
+      <div class="hero-badge"><span>📍</span> <span>Bhainsa, Nirmal District</span></div>
+    </div>
+  </div>
+  <div class="scroll-hint">
+    <div class="scroll-line"></div>
+    <span>Scroll</span>
+  </div>
+</section>
+
+<!-- TICKER -->
+<div class="strip">
+  <div class="strip-track">
+    <span class="strip-item"><span class="strip-dot"></span> Certified Beautician</span>
+    <span class="strip-item"><span class="strip-dot"></span> Bridal Makeup Specialist</span>
+    <span class="strip-item"><span class="strip-dot"></span> Skin & Hair Treatments</span>
+    <span class="strip-item"><span class="strip-dot"></span> Traditional & Modern Looks</span>
+    <span class="strip-item"><span class="strip-dot"></span> Bhainsa · Nirmal · Telangana</span>
+    <span class="strip-item"><span class="strip-dot"></span> Trusted Since 10+ Years</span>
+    <span class="strip-item"><span class="strip-dot"></span> Certified Beautician</span>
+    <span class="strip-item"><span class="strip-dot"></span> Bridal Makeup Specialist</span>
+    <span class="strip-item"><span class="strip-dot"></span> Skin & Hair Treatments</span>
+    <span class="strip-item"><span class="strip-dot"></span> Traditional & Modern Looks</span>
+    <span class="strip-item"><span class="strip-dot"></span> Bhainsa · Nirmal · Telangana</span>
+    <span class="strip-item"><span class="strip-dot"></span> Trusted Since 10+ Years</span>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════ ABOUT -->
+<section id="about">
+  <div class="about-grid">
+    <div class="about-img-wrap">
+      <div class="about-img-frame">
+        <div class="about-img-placeholder">👸</div>
+      </div>
+      <div class="about-cert-badge">
+        <div class="cert-icon">🏅</div>
+        <div class="cert-text">Certified Beauty Professional</div>
+      </div>
+    </div>
+    <div class="about-content">
+      <span class="section-eyebrow">About Sri Rekha</span>
+      <h2 class="section-title">Your Beauty, In <em>Expert Hands</em></h2>
+      <p class="section-sub">At Sri Rekha Beauty Parlour in Bhainsa, we believe every woman deserves to feel extraordinary. As a certified beautician with deep roots in Nirmal district, we combine professional training with a heartfelt understanding of our clients' beauty aspirations.</p>
+      <p class="section-sub" style="margin-top:12px;">From daily pampering to your most precious bridal day — we craft looks that celebrate who you are.</p>
+
+      <ul class="trust-list">
+        <li class="trust-item">
+          <div class="trust-icon">🎓</div>
+          <div class="trust-text">
+            <h4>Professionally Certified</h4>
+            <p>Trained and certified in advanced beauty techniques — skincare, makeup artistry, hair, and more.</p>
+          </div>
+        </li>
+        <li class="trust-item">
+          <div class="trust-icon">🌸</div>
+          <div class="trust-text">
+            <h4>Hygienic & Premium Products</h4>
+            <p>Only certified, skin-safe products used. Strict hygiene standards maintained for every service.</p>
+          </div>
+        </li>
+        <li class="trust-item">
+          <div class="trust-icon">💍</div>
+          <div class="trust-text">
+            <h4>Bridal Expertise</h4>
+            <p>Hundreds of brides have trusted us for their wedding day glow. Your dream look, delivered perfectly.</p>
+          </div>
+        </li>
+        <li class="trust-item">
+          <div class="trust-icon">📍</div>
+          <div class="trust-text">
+            <h4>Proudly Local — Deeply Trusted</h4>
+            <p>Serving Bhainsa, Nirmal district and surrounding areas. Known, recommended, and loved by families for over a decade.</p>
+          </div>
+        </li>
+      </ul>
+
+      <div class="stat-row">
+        <div class="stat-item"><div class="big">500+</div><div class="lbl">Happy Clients</div></div>
+        <div class="stat-item"><div class="big">10+</div><div class="lbl">Years Experience</div></div>
+        <div class="stat-item"><div class="big">200+</div><div class="lbl">Brides Served</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════ BRIDAL -->
+<section class="bridal-bg" id="bridal">
+  <div class="bridal-grid">
+    <div class="bridal-content">
+      <span class="section-eyebrow">✦ For the Bride</span>
+      <h2 class="section-title">Your Wedding Day Deserves <em>Nothing Less</em> Than Perfect</h2>
+      <p class="section-sub" style="color:rgba(255,255,255,0.55)">Your wedding day is written in your heart long before it arrives. We're here to make sure your face tells that story — with radiance, grace, and artistry that lasts from the first ritual to the last photograph.</p>
+
+      <div class="bridal-promise">
+        <p>"Every bride who walks into Sri Rekha's leaves as the most beautiful version of herself — confident, glowing, and unforgettable."</p>
+        <div class="bridal-quote-attr">— Our Bridal Promise</div>
+      </div>
+
+      <div class="bridal-features">
+        <div class="bridal-feature">Pre-bridal skin prep packages (3-session & 6-session)</div>
+        <div class="bridal-feature">Trial makeup sessions before the big day</div>
+        <div class="bridal-feature">HD & airbrush foundation for all skin tones</div>
+        <div class="bridal-feature">Traditional Telugu & Maharashtrian bridal looks</div>
+        <div class="bridal-feature">Bridesmaid & family party makeup packages</div>
+        <div class="bridal-feature">Mehndi coordination & draping assistance</div>
+      </div>
+
+      <a href="#contact" class="btn-gold" style="margin-top:32px; display:inline-block;">💍 Book Your Bridal Consultation</a>
+    </div>
+
+    <div class="bridal-cards">
+      <div class="bridal-card">
+        <div class="bc-label">Package 01</div>
+        <div class="bc-title">Silver Bridal Package</div>
+        <div class="bc-desc">Bridal makeup, saree draping, hair styling & basic pre-bridal facial. Perfect for intimate ceremonies.</div>
+        <div class="bc-price">Starting ₹4,999 onwards</div>
+      </div>
+      <div class="bridal-card">
+        <div class="bc-label">Package 02 · Most Popular</div>
+        <div class="bc-title">Gold Bridal Package</div>
+        <div class="bc-desc">HD bridal makeup, 3-session pre-bridal skincare, hair styling, draping & trial session included.</div>
+        <div class="bc-price">Starting ₹8,999 onwards</div>
+      </div>
+      <div class="bridal-card">
+        <div class="bc-label">Package 03 · Premium</div>
+        <div class="bc-title">Royal Bridal Package</div>
+        <div class="bc-desc">Airbrush makeup, 6-session pre-bridal glow treatment, hair, draping, trial + family party makeup for 2.</div>
+        <div class="bc-price">Starting ₹14,999 onwards</div>
+      </div>
+      <div class="bridal-card">
+        <div class="bc-label">Add-On</div>
+        <div class="bc-title">Bridesmaid & Family Packages</div>
+        <div class="bc-desc">Group packages for mother of bride, sisters & bridesmaids. Coordinated looks for the entire family.</div>
+        <div class="bc-price">Starting ₹1,999 per person</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════ SERVICES -->
+<section class="services-section" id="services">
+  <div style="text-align:center; max-width:600px; margin:0 auto;">
+    <span class="section-eyebrow">Our Services</span>
+    <h2 class="section-title" style="max-width:none; text-align:center;">Beauty Services <em>Crafted</em> for You</h2>
+    <p class="section-sub" style="max-width:none; text-align:center;">From daily beauty rituals to special occasion transformations — every service is delivered with professional care and premium products.</p>
+  </div>
+  <div class="services-grid">
+    <div class="service-card">
+      <span class="service-emoji">💄</span>
+      <div class="service-name">Makeup & Beauty</div>
+      <p class="service-desc">Party makeup, engagement looks, function makeup, traditional & contemporary styles. Suitable for all skin tones and occasions.</p>
+      <a href="#contact" class="service-link">Book Now →</a>
+    </div>
+    <div class="service-card">
+      <span class="service-emoji">✨</span>
+      <div class="service-name">Facials & Skin Care</div>
+      <p class="service-desc">Gold facials, fruit facials, cleanup, de-tan treatments, and custom skin nourishment therapies for glowing, healthy skin.</p>
+      <a href="#contact" class="service-link">Book Now →</a>
+    </div>
+    <div class="service-card">
+      <span class="service-emoji">💇</span>
+      <div class="service-name">Hair Services</div>
+      <p class="service-desc">Hair cutting, colouring, keratin treatments, hair spa, smoothening, styling, and bridal hairdos by trained professionals.</p>
+      <a href="#contact" class="service-link">Book Now →</a>
+    </div>
+    <div class="service-card">
+      <span class="service-emoji">🧖</span>
+      <div class="service-name">Waxing & Threading</div>
+      <p class="service-desc">Full body waxing, eyebrow threading & shaping, upper lip, face threading — gentle, quick, and hygienic every time.</p>
+      <a href="#contact" class="service-link">Book Now →</a>
+    </div>
+    <div class="service-card">
+      <span class="service-emoji">💅</span>
+      <div class="service-name">Nail Art & Manicure</div>
+      <p class="service-desc">Manicure, pedicure, nail extensions, gel nails, nail art, and hand & foot care treatments for beautiful, well-groomed nails.</p>
+      <a href="#contact" class="service-link">Book Now →</a>
+    </div>
+    <div class="service-card">
+      <span class="service-emoji">🥻</span>
+      <div class="service-name">Saree Draping</div>
+      <p class="service-desc">Expert saree draping in all styles — Nauvari, Nivi, Bengali, Gujarati and more. Perfect for weddings, functions & photo shoots.</p>
+      <a href="#contact" class="service-link">Book Now →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════ PROCESS -->
+<section class="process-section">
+  <div style="text-align:center;">
+    <span class="section-eyebrow">How It Works</span>
+    <h2 class="section-title" style="max-width:none; text-align:center;">Your <em>Journey</em> to Radiance</h2>
+  </div>
+  <div class="process-steps">
+    <div class="process-step">
+      <div class="step-num">1</div>
+      <div class="step-title">Book Consultation</div>
+      <p class="step-desc">Call, WhatsApp or fill the form. We'll understand your needs and schedule your visit.</p>
+    </div>
+    <div class="process-step">
+      <div class="step-num">2</div>
+      <div class="step-title">Skin Analysis</div>
+      <p class="step-desc">We assess your skin type, tone & requirements to recommend the perfect treatments.</p>
+    </div>
+    <div class="process-step">
+      <div class="step-num">3</div>
+      <div class="step-title">Personalised Plan</div>
+      <p class="step-desc">A tailored beauty plan curated specifically for your skin, event, and budget.</p>
+    </div>
+    <div class="process-step">
+      <div class="step-num">4</div>
+      <div class="step-title">Expert Service</div>
+      <p class="step-desc">Relax as our certified beautician delivers your treatment with care and precision.</p>
+    </div>
+    <div class="process-step">
+      <div class="step-num">5</div>
+      <div class="step-title">Walk Out Glowing</div>
+      <p class="step-desc">Leave feeling confident, beautiful and completely satisfied — every single visit.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════ TESTIMONIALS -->
+<section class="testimonials-bg" id="testimonials">
+  <div style="text-align:center; max-width:600px; margin:0 auto;">
+    <span class="section-eyebrow">Client Stories</span>
+    <h2 class="section-title" style="max-width:none; text-align:center;">Brides & Beauties <em>Speak</em> for Us</h2>
+  </div>
+  <div class="testi-grid">
+    <div class="testi-card">
+      <div class="stars">★★★★★</div>
+      <p class="testi-text">"I was so nervous before my wedding, but Sri Rekha ji made me feel so at ease. The makeup lasted the entire day and I looked exactly like I had dreamed. Every photo is a treasure."</p>
+      <div class="testi-author">
+        <div class="testi-avatar">🌸</div>
+        <div>
+          <div class="testi-name">Priya Reddy</div>
+          <div class="testi-event">Bride · Bhainsa, 2024</div>
+        </div>
+      </div>
+    </div>
+    <div class="testi-card">
+      <div class="stars">★★★★★</div>
+      <p class="testi-text">"The gold facial and pre-bridal package completely transformed my skin. Friends and relatives couldn't stop complimenting how radiant I looked. Highly recommend to every bride in Nirmal!"</p>
+      <div class="testi-author">
+        <div class="testi-avatar">💐</div>
+        <div>
+          <div class="testi-name">Sandhya Kulkarni</div>
+          <div class="testi-event">Pre-Bridal Client · Nirmal, 2024</div>
+        </div>
+      </div>
+    </div>
+    <div class="testi-card">
+      <div class="stars">★★★★★</div>
+      <p class="testi-text">"I've been coming here for 5 years for facials, threading and hair. The service is always professional, clean and affordable. Sri Rekha Beauty Parlour is the best in Bhainsa — no doubt."</p>
+      <div class="testi-author">
+        <div class="testi-avatar">✨</div>
+        <div>
+          <div class="testi-name">Asha Deshmukh</div>
+          <div class="testi-event">Regular Client · Bhainsa</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════ GALLERY PLACEHOLDER -->
+<section class="gallery-section">
+  <div style="text-align:center; max-width:600px; margin:0 auto;">
+    <span class="section-eyebrow" style="color:var(--gold-light)">Portfolio</span>
+    <h2 class="section-title" style="color:white; max-width:none; text-align:center;">Beauty That <em>Speaks</em> for Itself</h2>
+    <p class="section-sub" style="text-align:center; margin:0 auto;">A glimpse of transformations crafted at Sri Rekha Beauty Parlour.</p>
+  </div>
+  <div class="gallery-grid">
+    <div class="gallery-item"><span>👰</span><div class="gallery-label">Bridal Look</div></div>
+    <div class="gallery-item"><span>💄</span><div class="gallery-label">Party Makeup</div></div>
+    <div class="gallery-item"><span>✨</span><div class="gallery-label">Skin Glow</div></div>
+    <div class="gallery-item"><span>💇</span><div class="gallery-label">Hair Styling</div></div>
+    <div class="gallery-item"><span>🌸</span><div class="gallery-label">Facial Treatment</div></div>
+    <div class="gallery-item"><span>💅</span><div class="gallery-label">Nail Art</div></div>
+    <div class="gallery-item"><span>🥻</span><div class="gallery-label">Saree Draping</div></div>
+  </div>
+  <p style="text-align:center; margin-top:24px; font-size:0.78rem; color:rgba(255,255,255,0.25); letter-spacing:1px;">Replace placeholders with actual photos — ideally before/after bridal & service shots</p>
+</section>
+
+<!-- ═══════════════════════════════════════════ FAQ -->
+<section class="faq-section" id="faq">
+  <div style="max-width:600px;">
+    <span class="section-eyebrow">FAQ</span>
+    <h2 class="section-title">Questions We <em>Often</em> Hear</h2>
+    <p class="section-sub">Everything you need to know before booking your appointment at Sri Rekha Beauty Parlour, Bhainsa.</p>
+  </div>
+  <div class="faq-grid">
+    <div>
+      <div class="faq-item">
+        <div class="faq-q">
+          <span class="faq-q-text">Do you offer bridal packages for weddings in Bhainsa and Nirmal district?</span>
+          <span class="faq-icon">+</span>
+        </div>
+        <div class="faq-a">Yes! We offer Silver, Gold, and Royal bridal packages suited to all budgets. We cater to weddings across Bhainsa, Nirmal, Mudhole, Khanapur, and surrounding areas in Telangana and Maharashtra border. Book at least 2–3 months in advance for bridal slots.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">
+          <span class="faq-q-text">What is the pre-bridal package and when should I start?</span>
+          <span class="faq-icon">+</span>
+        </div>
+        <div class="faq-a">Our pre-bridal package includes a series of facials, clean-up, de-tan, and skin nourishment treatments designed to give your skin a natural glow. Ideally start 3–6 months before the wedding for the best results. Even a 1-month package shows visible improvement.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">
+          <span class="faq-q-text">Do you provide a trial makeup session before the wedding?</span>
+          <span class="faq-icon">+</span>
+        </div>
+        <div class="faq-a">Absolutely. We strongly recommend a trial makeup session 2–3 weeks before your wedding day. This helps us understand your preferences, test products on your skin, and ensure the final look is exactly what you envisioned.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">
+          <span class="faq-q-text">What makeup brands and products do you use?</span>
+          <span class="faq-icon">+</span>
+        </div>
+        <div class="faq-a">We use professional, certified beauty brands known for their longevity and skin safety. All products are skin-tested, dermatologically appropriate, and suitable for Indian skin tones. We never compromise on product quality.</div>
+      </div>
+    </div>
+    <div>
+      <div class="faq-item">
+        <div class="faq-q">
+          <span class="faq-q-text">Can you do makeup and services at my home or venue?</span>
+          <span class="faq-icon">+</span>
+        </div>
+        <div class="faq-a">Yes! We offer doorstep services for bridal clients and group bookings. Home visit charges may apply depending on the distance. Please call or WhatsApp us to confirm availability for your date and location.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">
+          <span class="faq-q-text">How do I book an appointment at Sri Rekha Beauty Parlour?</span>
+          <span class="faq-icon">+</span>
+        </div>
+        <div class="faq-a">You can book by calling us, sending a WhatsApp message, or filling the enquiry form on this page. For bridal bookings, we recommend booking 2–3 months in advance as slots fill quickly, especially during wedding season.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">
+          <span class="faq-q-text">Do you offer services for men or only women?</span>
+          <span class="faq-icon">+</span>
+        </div>
+        <div class="faq-a">Sri Rekha Beauty Parlour is a women-only beauty salon. We serve women and girls of all ages, from young girls to senior ladies. We offer family-friendly packages for wedding groups including mothers and sisters of the bride.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">
+          <span class="faq-q-text">What are your working hours and location?</span>
+          <span class="faq-icon">+</span>
+        </div>
+        <div class="faq-a">We are open daily from 9:00 AM to 7:00 PM. We are located in Bhainsa, Nirmal District, Telangana – 504103. Please call ahead to confirm availability and avoid waiting. Walk-ins are welcome, but appointments are preferred.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════ CTA / CONTACT -->
+<section class="cta-section" id="contact">
+  <div style="position:relative; z-index:1;">
+    <span class="section-eyebrow" style="display:block; text-align:center;">Book Your Experience</span>
+    <h2 class="section-title" style="color:white; text-align:center; max-width:none;">Ready to <em>Glow?</em></h2>
+    <p class="section-sub" style="color:rgba(255,255,255,0.55); text-align:center; max-width:540px; margin:12px auto 0;">Tell us about your occasion and we'll craft the perfect beauty experience for you.</p>
+    <div class="cta-form">
+      <div class="form-title">Request a Consultation</div>
+      <div class="form-row">
+        <div class="form-group">
+          <label class="form-label">Your Name</label>
+          <input type="text" class="form-input" placeholder="Full name">
+        </div>
+        <div class="form-group">
+          <label class="form-label">Mobile Number</label>
+          <input type="tel" class="form-input" placeholder="+91 XXXXX XXXXX">
+        </div>
+        <div class="form-group">
+          <label class="form-label">Service Interested In</label>
+          <select class="form-input">
+            <option value="">Select a service</option>
+            <option>Bridal Package</option>
+            <option>Pre-Bridal Treatment</option>
+            <option>Party Makeup</option>
+            <option>Facial & Skincare</option>
+            <option>Hair Services</option>
+            <option>Waxing & Threading</option>
+            <option>Nail Art & Manicure</option>
+            <option>Saree Draping</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Preferred Date</label>
+          <input type="date" class="form-input">
+        </div>
+        <div class="form-group full">
+          <label class="form-label">Any Special Requirements?</label>
+          <input type="text" class="form-input" placeholder="Tell us about your occasion or special requests...">
+        </div>
+      </div>
+      <button class="form-submit" onclick="alert('Thank you! We will contact you shortly to confirm your appointment. You can also WhatsApp us for faster response.')">✦ &nbsp; Send Booking Request</button>
+      <p class="form-note">✓ We respond within 2 hours &nbsp;|&nbsp; ✓ No advance payment required &nbsp;|&nbsp; ✓ Confidential</p>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT BAR -->
+<div class="contact-bar" id="find-us">
+  <a href="tel:+91XXXXXXXXXX" class="contact-item">
+    <span class="contact-icon">📞</span>
+    <div class="contact-detail">
+      <div class="ct-label">Call Us</div>
+      <div class="ct-val">+91 XXXXX XXXXX</div>
+    </div>
+  </a>
+  <a href="https://wa.me/91XXXXXXXXXX" class="contact-item" target="_blank">
+    <span class="contact-icon">💬</span>
+    <div class="contact-detail">
+      <div class="ct-label">WhatsApp</div>
+      <div class="ct-val">Chat with Us</div>
+    </div>
+  </a>
+  <div class="contact-item">
+    <span class="contact-icon">📍</span>
+    <div class="contact-detail">
+      <div class="ct-label">Visit Us</div>
+      <div class="ct-val">Bhainsa, Nirmal · 504103</div>
+    </div>
+  </div>
+  <div class="contact-item">
+    <span class="contact-icon">🕐</span>
+    <div class="contact-detail">
+      <div class="ct-label">Open Daily</div>
+      <div class="ct-val">9:00 AM – 7:00 PM</div>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-brand">
+    <span class="f-logo">Sri <span>Rekha</span> Beauty Parlour</span>
+    <p>Bhainsa's most trusted beauty destination — certified expertise, premium care, and a passion for making every woman feel her absolute best.</p>
+    <p style="margin-top:12px; font-size:0.72rem; color:rgba(255,255,255,0.25);">Bhainsa, Nirmal District, Telangana – 504103</p>
+  </div>
+  <div class="footer-col">
+    <h4>Services</h4>
+    <ul>
+      <li><a href="#services">Bridal Makeup</a></li>
+      <li><a href="#services">Pre-Bridal Package</a></li>
+      <li><a href="#services">Facials & Skincare</a></li>
+      <li><a href="#services">Hair Services</a></li>
+      <li><a href="#services">Waxing & Threading</a></li>
+      <li><a href="#services">Nail Art</a></li>
+      <li><a href="#services">Saree Draping</a></li>
+    </ul>
+  </div>
+  <div class="footer-col">
+    <h4>Quick Links</h4>
+    <ul>
+      <li><a href="#about">About Us</a></li>
+      <li><a href="#bridal">Bridal Packages</a></li>
+      <li><a href="#testimonials">Client Reviews</a></li>
+      <li><a href="#faq">FAQ</a></li>
+      <li><a href="#contact">Book Appointment</a></li>
+    </ul>
+  </div>
+  <div class="footer-col">
+    <h4>Serving Areas</h4>
+    <ul>
+      <li><a href="#">Bhainsa</a></li>
+      <li><a href="#">Nirmal</a></li>
+      <li><a href="#">Mudhole</a></li>
+      <li><a href="#">Khanapur</a></li>
+      <li><a href="#">Bellampalli</a></li>
+      <li><a href="#">Mancherial</a></li>
+    </ul>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2025 Sri Rekha Beauty Parlour · All rights reserved · Bhainsa, Nirmal District, Telangana 504103</p>
+    <p class="seo-keywords">beauty parlour bhainsa | bridal makeup nirmal | beautician bhainsa | beauty salon nirmal district | wedding makeup bhainsa | certified beautician telangana</p>
+  </div>
+</footer>
+
+<script>
+// Custom cursor
+const cursor = document.getElementById('cursor');
+const ring = document.getElementById('cursorRing');
+document.addEventListener('mousemove', e => {
+  cursor.style.left = e.clientX + 'px';
+  cursor.style.top = e.clientY + 'px';
+  setTimeout(() => {
+    ring.style.left = e.clientX + 'px';
+    ring.style.top = e.clientY + 'px';
+  }, 60);
+});
+document.querySelectorAll('a, button, .service-card, .bridal-card, .faq-item').forEach(el => {
+  el.addEventListener('mouseenter', () => {
+    ring.style.transform = 'translate(-50%, -50%) scale(1.8)';
+    ring.style.borderColor = 'var(--gold)';
+    ring.style.opacity = '1';
+  });
+  el.addEventListener('mouseleave', () => {
+    ring.style.transform = 'translate(-50%, -50%) scale(1)';
+    ring.style.opacity = '0.6';
+  });
+});
+
+// Nav scroll
+const nav = document.getElementById('navbar');
+window.addEventListener('scroll', () => {
+  nav.classList.toggle('scrolled', window.scrollY > 60);
+});
+
+// FAQ toggle
+document.querySelectorAll('.faq-item').forEach(item => {
+  item.addEventListener('click', () => {
+    const isOpen = item.classList.contains('open');
+    document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+    if (!isOpen) item.classList.add('open');
+  });
+});
+
+// Scroll reveal
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.style.opacity = '1';
+      entry.target.style.transform = 'translateY(0)';
+    }
+  });
+}, { threshold: 0.1 });
+
+document.querySelectorAll('.service-card, .testi-card, .bridal-card, .process-step, .trust-item, .market-card, .faq-item').forEach(el => {
+  el.style.opacity = '0';
+  el.style.transform = 'translateY(24px)';
+  el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+  observer.observe(el);
+});
+</script>
+</body>
+</html>
